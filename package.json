@@ -9,7 +9,7 @@
     "commitlint": "commitlint --edit",
     "lint": "pnpm biome check --write ./src",
     "cz": "git add . && git-cz",
-    "postinstall": "npx simple-git-hooks"
+    "postinstall": "npx simple-git-hooks && git config core.hooksPath .git/hooks/"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
